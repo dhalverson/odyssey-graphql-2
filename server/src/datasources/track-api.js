@@ -7,14 +7,14 @@ class TrackAPI extends RESTDataSource {
   }
 
   // GET
-  async getTracksForHome() {
+  getTracksForHome() {
     return this.get(
-      `tracks`
+      'tracks'
     );
   }
 
   // GET AUTHOR
-  async getAuthor(authorId) {
+  getAuthor(authorId) {
     return this.get(
       `author/${encodeURIComponent(authorId)}`
     );
